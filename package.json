@@ -4,13 +4,14 @@
   "description": "An AI-powered tool to generate viral Xiaohongshu titles and captions",
   "type": "module",
   "scripts": {
+    "preinstall": "rm -rf package-lock.json yarn.lock pnpm-lock.yaml",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "start": "node server.js"
   },
   "dependencies": {
-    "@google/genai": "*",
+    "@google/genai": "^0.1.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
