@@ -1,7 +1,7 @@
 {
   "framework": "vite",
   "buildCommand": "npm run build",
-  "installCommand": "npm install",
+  "installCommand": "rm -rf package-lock.json yarn.lock pnpm-lock.yaml node_modules && npm install --no-package-lock --legacy-peer-deps",
   "devCommand": "npm run dev",
   "rewrites": [
     {
